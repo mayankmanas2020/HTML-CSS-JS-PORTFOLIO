@@ -275,12 +275,10 @@ section {
   position: relative;
 }
 
-.about-containers {                     
-  display: flex;                       
+.about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  align-items: stretch;                  
 }
 
 .about-details-container {
@@ -303,48 +301,14 @@ section {
   bottom: 2.5rem;
 }
 
-
-.details-container-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; 
-  gap: 0.75rem;            
+.details-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
-  border-radius: 1rem;
-  border: 0.1rem solid rgb(163, 163, 163);
-  text-align: left;
-}
-
-.details-container-1 ul {
-  margin: 0;
-  padding-left: 1.2rem;
-  list-style: disc; 
-}
-
-.details-container-1 .icon {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
-
-.details-container {                    
-  display: flex;                        
-  flex-direction: column;               
-  justify-content: space-between;       
-  padding: 1.5rem;
-  flex: 1; 
-  background: white;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: left;
-}
-
-.details-container.color-container {    
-  min-height: 400px;
 }
 
 .section-container {
@@ -412,23 +376,14 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 100%;
-  max-width: 1080px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+  width: 80%;
+  height: 70%;
+  margin: auto;
 }
 
 .project-title {
   margin: 01rem;
   color: black;
-  font-size: 1.5rem;
-  min-height: 2.5rem; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .project-btn {
