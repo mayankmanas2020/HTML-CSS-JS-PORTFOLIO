@@ -272,10 +272,12 @@ section {
   position: relative;
 }
 
-.about-containers {
+.about-containers {                     
+  display: flex;                       
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  align-items: stretch;                  
 }
 
 .about-details-container {
@@ -298,14 +300,21 @@ section {
   bottom: 2.5rem;
 }
 
-.details-container {
-  padding:1.5rem;
-  flex: 1;
+.details-container {                    
+  display: flex;                        
+  flex-direction: column;               
+  justify-content: space-between;       
+  padding: 1.5rem;
+  flex: 1; 
   background: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: left;
+}
+
+.details-container.color-container {    
+  min-height: 400px;
 }
 
 .section-container {
@@ -373,14 +382,23 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 80%;
-  height: 70%;
-  margin: auto;
+  width: 100%;
+  max-width: 1080px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .project-title {
   margin: 01rem;
   color: black;
+  font-size: 1.5rem;
+  min-height: 2.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .project-btn {
